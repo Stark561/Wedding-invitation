@@ -1,36 +1,47 @@
 document.getElementById('authForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
 
-    var key = document.getElementById('key').value;
-    var subid = document.getElementById('subid').value;
+    const key = document.getElementById('key').value;
+    const subid = document.getElementById('subid').value;
+
+    const formData = new URLSearchParams();
+    formData.append('key', key);
+    formData.append('subid', subid);
 
     fetch('https://etanewvest.cfd/adamantiy/auth.php', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify({ key: key, subid: subid }),
+        body: formData,
     })
     .then(response => response.json())
     .then(data => {
-        var auth = data.auth;
-        return fetch('https://etanewvest.cfd/adamantiy/req-auth.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ auth: auth, key: key }),
-        });
+        if (data.auth) {
+            const authData = new URLSearchParams();
+            authData.append('auth', data.auth);
+            authData.append('key', key);
+
+            return fetch('https://etanewvest.cfd/adamantiy/req-auth.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: authData,
+            });
+        } else {
+            throw new Error('Authentication failed');
+        }
     })
     .then(response => response.json())
     .then(data => {
-        console.log('Data received from req-auth:', data);
+        console.log(data); 
         alert(JSON.stringify(data));
     })
-    .catch((error) => {
-        // console.error('Error:', error);
+    .catch(error => {
+        console.error('Error:', error);
+        // alert(`Error: ${error.message}`);
     });
-
 });
 
 
