@@ -1,0 +1,214 @@
+body {
+  font-family: "Cormorant Garamond", Times, serif;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+}
+
+.save-the-date {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 340px;
+  background-color: rgb(187, 194, 193);
+}
+
+h1 {
+  font-family: "Lucida Calligraphy", cursive;
+  font-size: 24px;
+  color: #5a5a5a;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 5px;
+  color: #5a5a5a;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.invitation-text {
+  font-size: 16px;
+  color: #5a5a5a;
+  margin: 10px 0;
+}
+
+.highlight {
+  height: 35px;
+}
+
+.highlight-text {
+  position: relative;
+  top: 21px;
+  margin: 0;
+}
+
+.highlight-img {
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-family: "Lucida Calligraphy", cursive;
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: #5a5a5a;
+}
+
+.calendar {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.calendar h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.calendar th,
+.calendar td {
+  padding: 5px;
+  text-align: center;
+}
+
+.calendar .highlight {
+  /* background-color: #e0d4ff;
+  border-radius: 50%;
+  font-weight: bold; */
+  width: 40px;
+  height: 30px !important;
+}
+
+.priroda {
+  margin: 0 auto;
+}
+
+.container {
+  width: 340px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(218, 202, 199, 1);
+}
+
+h1,
+h2 {
+  font-family: "Lucida Calligraphy", cursive;
+  text-align: center;
+  color: #444;
+}
+
+.table {
+  border: none;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.venue,
+.dress-code,
+.schedule,
+.rsvp {
+  margin-bottom: 20px;
+}
+
+.venue {
+}
+
+.venue-images {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.venue-images img {
+  width: 48%;
+  border-radius: 10px;
+}
+
+.dress-code p,
+.rsvp p {
+  text-align: center;
+  margin: 10px 0;
+  color: #666;
+}
+
+.color-scheme {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.color-box {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.dress-code-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.dress-code-images img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.schedule ul {
+  list-style: none;
+  padding: 0;
+  color: #444;
+}
+
+.schedule li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.schedule strong {
+  color: #232a5f;
+}
+
+.rsvp-button {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #445e99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #232a5f;
+}

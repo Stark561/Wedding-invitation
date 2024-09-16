@@ -1,32 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test-1 API</title>
+    <title>Wedding invitation</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet"
-    />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <form class="box" id="authForm">
-        <p class="text">Ведите ключ</p>
-        <label class="label" for="key">Ключ:</label>
-        <input class="input" type="text" id="key" name="key" required>
-        
-        <p class="text">Идентификатор</p>
-        <label class="label" for="subid">ID:</label>
-        <input class="input" type="text" id="subid" name="subid" value="mae2v49sn4nslf21" required readonly>
+    <div class="save-the-date">
+        <h1>Save the Date</h1>
+        <h2>Igor & Valerie</h2>
 
-        <button class="btn" type="submit">Авторизоваться</button>
-    </form>
+        <div class="image-container">
+            <img src="./images/IMG_3916.PNG" alt="Igor & Valeria">
+        </div>
 
-    <script src="./script.js"></script>
+        <p class="invitation-text">
+            Дорогі друзі та рідні! <br>
+            Ми запрошуємо вас на наше весілля.
+        </p>
+
+        <h3>Дата весілля</h3>
+
+        <div class="calendar">
+            <h3>October 2024</h3>
+            <table>
+                <tr>
+                    <th>Пн</th>
+                    <th>Вт</th>
+                    <th>Ср</th>
+                    <th>Чт</th>
+                    <th>Пт</th>
+                    <th>Сб</th>
+                    <th>Вс</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td class="highlight">
+                        <p class="highlight-text">12</p>
+                        <img class="highlight-img" src="./images/free-icon-heart-2107845.png" width="30" height="30"
+                            alt="Фото 1">
+                    </td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Место проведения -->
+        <section class="venue">
+            <h1>Місце проведення</h1>
+            <div class="venue-images">
+                <img class="priroda" src="./images/image_5aa59308a9d624.60641109.jpg" alt="Priroda">
+                <!-- <img src="venue2.jpg" alt="Санкт-Петербург"> -->
+            </div>
+            <p>Ресторан "Priroda"</p>
+            <p>Кривий Ріг, вул. Дишинського, 11</p>
+        </section>
+
+        <!-- Dress Code -->
+        <section class="dress-code">
+            <h2>Dress Code</h2>
+            <p>Нам буде особливо приємно бачити вас у вбраннях кольорової гами нашого весілля.</p>
+            <div class="color-scheme">
+                <div class="color-box" style="background-color: #515228;"></div>
+                <div class="color-box" style="background-color: #3b7448;"></div>
+                <div class="color-box" style="background-color: #758849;"></div>
+                <div class="color-box" style="background-color: #60815d;"></div>
+                <div class="color-box" style="background-color: #bbc2c1;"></div>
+            </div>
+            <div class="dress-code-images">
+                <img src="./images/IMG_3863.JPG" alt="Фото 1">
+                <img src="./images/IMG_3879.JPG" alt="Фото 2">
+                <img src="./images/IMG_3880.JPG" alt="Фото 3">
+                <img src="./images/IMG_3905.JPG" alt="Фото 4">
+            </div>
+        </section>
+
+        <!-- Программа -->
+        <section class="schedule">
+            <h2>Программа</h2>
+            <ul>
+                <li><strong>11:00</strong> - Церемонія одруження <br> (за адресою Липова 7)</li>
+                <li><strong>11:30</strong> - Весільна промова</li>
+                <li><strong>15:00</strong> - Святкова вечеря в банкетному залі "Priroda"</li>
+            </ul>
+        </section>
+
+        <!-- RSVP -->
+        <section class="rsvp">
+            <h2>Ви прийдете?</h2>
+            <p>Будь ласка, дайте відповідь до 22.09.2024, написавши нам особисто в Телеграмі. </p>
+            <a href="https://t.me/Stark_561" target="_blank" rel="noopener noreferrer" class="rsvp-button">Дати
+                відповідь</a>
+        </section>
+    </div>
+
+
 </body>
+
 </html>
