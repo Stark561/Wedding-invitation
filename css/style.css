@@ -48,13 +48,15 @@ h2 {
 }
 
 .highlight-text {
-  position: relative;
-  top: 21px;
   margin: 0;
 }
 
 .highlight-img {
-  margin-bottom: 6px;
+  position: relative;
+  top: 70px;
+  left: 96px;
+  width: 30px;
+  height: 30px;
 }
 
 h3 {
@@ -201,7 +203,7 @@ h2 {
   text-align: center;
   margin: 10px auto;
   padding: 10px 20px;
-  background-color: #445e99;
+  background-color: #60815d;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -210,5 +212,5 @@ h2 {
 }
 
 .rsvp-button:hover {
-  background-color: #232a5f;
+  background-color: #536e50;
 }
