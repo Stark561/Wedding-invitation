@@ -6,6 +6,22 @@ body {
   height: 100vh;
 }
 
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  padding: 0;
+}
+
+.eb-garamond{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
 .save-the-date {
   background-color: white;
   padding: 20px;
@@ -14,11 +30,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 340px;
-  background-color: rgb(187, 194, 193);
+  background-color: #dee4d8;
 }
 
 h1 {
-  font-family: "Lucida Calligraphy", cursive;
+  font-family: "Cormorant Garamond", serif;
   font-size: 24px;
   color: #5a5a5a;
   padding-top: 50px;
@@ -38,7 +54,7 @@ h2 {
 }
 
 .invitation-text {
-  font-size: 16px;
+  font-size: 20px;
   color: #5a5a5a;
   margin: 10px 0;
 }
@@ -105,9 +121,9 @@ h3 {
   background-color: white;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: rgba(218, 202, 199, 1);
+  /* background-color: #94a583; */
 }
 
 h1,
@@ -115,6 +131,12 @@ h2 {
   font-family: "Lucida Calligraphy", cursive;
   text-align: center;
   color: #444;
+}
+
+.time{
+  font-weight: 500;
+  font-size: 22px;
+  color: #1b4e0f;
 }
 
 .table {
@@ -130,12 +152,12 @@ h2 {
   margin-top: 20px;
 }
 
-.venue,
+/* .venue,
 .dress-code,
 .schedule,
 .rsvp {
   margin-bottom: 20px;
-}
+} */
 
 .venue {
 }
@@ -192,10 +214,6 @@ h2 {
 .schedule li {
   margin-bottom: 10px;
   font-size: 16px;
-}
-
-.schedule strong {
-  color: #232a5f;
 }
 
 .rsvp-button {
